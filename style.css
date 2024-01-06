@@ -1,10 +1,22 @@
 body
 {
-    background-color: cyan;
+    
+    background-image: linear-gradient(to right top, #00008b, #376ad7 #05b2eb #f08080 #05b2eb #ff7f50 #00ffff #a54826 );
+
+background-color: lightblue;
 }
 
-#webcam
+hr
 {
-width: 75px ;
-height: 75px; ;
+border:1px solid black;
+}
+
+.name_of_objects
+{
+color: goldenrod;
+}
+
+#line
+{
+    border:2px solid black;
 }

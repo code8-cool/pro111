@@ -1,33 +1,51 @@
+ 
 <html>
-
-<head>
-    <title>Collage Web App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-</head>
-<body>
-    <center>
-<h1 style="font-size:30px;">Face recognition App</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
-<h3>App is trained to identify the following people:</h3>
-<hr>
-<h4>Me</h4>
-<hr>
-<h4>My brother</h4>
-<hr>
-<br><br>
-<br><br>
-<div id="webcam"></div>
-<hr>
-<div id="capImage"></div>
-<br><br>
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+    <h3 class="btn btn-default heading">IMAGE RECOGNITION</h3>
+      <br><br>
+    
+      <p style="font-size: 22px;">App is trained to identify the following objects: </p>
+    <b class="name_of_objects">
+    Watch
+    <hr>
+    Spoon
+    <hr>
+    Phone
+    <hr>
+    Water Bottle
+    <hr id="line">
+    <br><br>
+    
+   
+    
+    
+
+  </b>
+      <label>Webcam View - </label>
+      <div id="camera">
+
+      </div>
+      <br><br>
+      <div id="result">
+
+      </div>
+      <br><br>
       <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
       <br><br>
       <button onclick="check();" class="btn btn-success">Identify Image</button>
@@ -35,14 +53,12 @@
 
       <p style="font-size: 22px;">Object : <span id="result_object_name"></span></p>
       <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span></p>
+    </center>
 
+  </div>
+<script src="main.js"></script>
 
-</center>
-
-
-
-
-
-    
   </body>
 </html>
+
+ 
